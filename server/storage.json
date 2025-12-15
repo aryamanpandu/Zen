@@ -1,0 +1,439 @@
+{
+  "users": [
+    {
+      "username": "testuser",
+      "password": "$2a$08$JrSX8hEB2sHh5b3o6SIgieMXneWJWr.hdVIDdlaj3G6UQyjtf2Rku"
+    },
+    {
+      "username": "testuser1",
+      "password": "$2a$08$GsYi39OmaZ3jAe.ozNH5LuXjUj0cuf.rgijzW9uMcezWzehQBHKWm"
+    },
+    {
+      "username": "Panduuu",
+      "password": "$2a$08$1OhT6JojpGfkBqqdK5ufguilU8DMSnhQmGzuAKbLNezh.t0aZwg5C"
+    }
+  ],
+  "configs": {
+    "default": {
+      "id": "default",
+      "name": "Default",
+      "focusMinutes": 25,
+      "shortBreakMinutes": 5,
+      "longBreakMinutes": 15,
+      "sessionsPerLongBreak": 4,
+      "owner": "system",
+      "immutable": true
+    }
+  },
+  "userConfigs": {
+    "testuser": [],
+    "testuser1": [
+      {
+        "id": "testuser1-1765763914910",
+        "name": "Quick",
+        "focusMinutes": 10,
+        "shortBreakMinutes": 2,
+        "longBreakMinutes": 5,
+        "sessionsPerLongBreak": 3,
+        "owner": "testuser1"
+      }
+    ],
+    "Panduuu": []
+  },
+  "sessions": {
+    "testuser": [
+      {
+        "id": "s-1765763838774",
+        "configId": "default",
+        "startedAt": 1765763838774,
+        "distractions": [
+          {
+            "text": "Email notification",
+            "at": 1765763838784
+          }
+        ],
+        "focusInput": "Complete project documentation"
+      }
+    ],
+    "testuser1": [
+      {
+        "id": "s-1765763919681",
+        "configId": "default",
+        "startedAt": 1765763919681,
+        "distractions": [
+          {
+            "text": "Slack notification",
+            "at": 1765763923341
+          }
+        ],
+        "focusInput": "Complete Zen documentation and testing"
+      }
+    ],
+    "Panduuu": [
+      {
+        "id": "s-1765823140255",
+        "configId": "default",
+        "startedAt": 1765823140255,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823140259",
+        "configId": "default",
+        "startedAt": 1765823140259,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823142169",
+        "configId": "default",
+        "startedAt": 1765823142169,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823142175",
+        "configId": "default",
+        "startedAt": 1765823142175,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823158908",
+        "configId": "default",
+        "startedAt": 1765823158908,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823158911",
+        "configId": "default",
+        "startedAt": 1765823158911,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823161044",
+        "configId": "default",
+        "startedAt": 1765823161044,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823161049",
+        "configId": "default",
+        "startedAt": 1765823161049,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823166024",
+        "configId": "default",
+        "startedAt": 1765823166024,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765823166027",
+        "configId": "default",
+        "startedAt": 1765823166027,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765824321341",
+        "configId": "default",
+        "startedAt": 1765824321341,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765824321343",
+        "configId": "default",
+        "startedAt": 1765824321343,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765824326974",
+        "configId": "default",
+        "startedAt": 1765824326974,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765824326977",
+        "configId": "default",
+        "startedAt": 1765824326977,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765824487446",
+        "configId": "default",
+        "startedAt": 1765824487446,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765824487449",
+        "configId": "default",
+        "startedAt": 1765824487449,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825065258",
+        "configId": "default",
+        "startedAt": 1765825065258,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825065261",
+        "configId": "default",
+        "startedAt": 1765825065261,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825201271",
+        "configId": "default",
+        "startedAt": 1765825201271,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825201272",
+        "configId": "default",
+        "startedAt": 1765825201272,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825203744",
+        "configId": "default",
+        "startedAt": 1765825203744,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825203748",
+        "configId": "default",
+        "startedAt": 1765825203748,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825421505",
+        "configId": "default",
+        "startedAt": 1765825421505,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825421507",
+        "configId": "default",
+        "startedAt": 1765825421507,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825427926",
+        "configId": "default",
+        "startedAt": 1765825427926,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825427930",
+        "configId": "default",
+        "startedAt": 1765825427930,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825536645",
+        "configId": "default",
+        "startedAt": 1765825536645,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825536647",
+        "configId": "default",
+        "startedAt": 1765825536647,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825570733",
+        "configId": "default",
+        "startedAt": 1765825570733,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825570736",
+        "configId": "default",
+        "startedAt": 1765825570736,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825716002",
+        "configId": "default",
+        "startedAt": 1765825716002,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825716004",
+        "configId": "default",
+        "startedAt": 1765825716004,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825741370",
+        "configId": "default",
+        "startedAt": 1765825741370,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825741372",
+        "configId": "default",
+        "startedAt": 1765825741372,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825844018",
+        "configId": "default",
+        "startedAt": 1765825844018,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825844023",
+        "configId": "default",
+        "startedAt": 1765825844023,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825853172",
+        "configId": "default",
+        "startedAt": 1765825853172,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825853173",
+        "configId": "default",
+        "startedAt": 1765825853173,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825855663",
+        "configId": "default",
+        "startedAt": 1765825855663,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825855667",
+        "configId": "default",
+        "startedAt": 1765825855667,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825879010",
+        "configId": "default",
+        "startedAt": 1765825879010,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825879013",
+        "configId": "default",
+        "startedAt": 1765825879013,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825882143",
+        "configId": "default",
+        "startedAt": 1765825882143,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765825882146",
+        "configId": "default",
+        "startedAt": 1765825882146,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765826041958",
+        "configId": "default",
+        "startedAt": 1765826041958,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765826041960",
+        "configId": "default",
+        "startedAt": 1765826041960,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765826044992",
+        "configId": "default",
+        "startedAt": 1765826044992,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765826044997",
+        "configId": "default",
+        "startedAt": 1765826044997,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765826091456",
+        "configId": "default",
+        "startedAt": 1765826091456,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765826091459",
+        "configId": "default",
+        "startedAt": 1765826091459,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765826136133",
+        "configId": "default",
+        "startedAt": 1765826136133,
+        "distractions": [],
+        "focusInput": ""
+      },
+      {
+        "id": "s-1765826136135",
+        "configId": "default",
+        "startedAt": 1765826136135,
+        "distractions": [],
+        "focusInput": ""
+      }
+    ]
+  }
+}
