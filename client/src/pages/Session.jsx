@@ -69,6 +69,17 @@ export default function Session(){
     if (timerRef.current) clearInterval(timerRef.current)
   }
 
+  async function resetTimer(){
+    setRunning(false)
+    if (timerRef.current) clearInterval(timerRef.current)
+    if (session) {
+      const rc = await (await authFetch('http://localhost:4000/api/configs')).json()
+      const cfg = rc.find(c=>c.id === (id||'default')) || rc[0]
+      setRemaining(cfg.focusMinutes * 60)
+      setPhase('focus')
+    }
+  }
+
   async function saveFocusInput(){
     if (!session) return
     const res = await authFetch(`http://localhost:4000/api/session/${session.id}/input`,{method:'POST', body:{input:focusInput}})
@@ -130,6 +141,12 @@ export default function Session(){
               className="px-8 py-3 bg-gradient-to-r from-red-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 disabled:opacity-50 hover:scale-105 active:scale-95 text-lg"
             >
               ⏸
+            </button>
+            <button 
+              onClick={resetTimer}
+              className="px-8 py-3 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 text-lg"
+            >
+              ↺
             </button>
           </div>
 
