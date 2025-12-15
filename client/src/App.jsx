@@ -56,7 +56,7 @@ export default function App(){
           </div>
         </header>
       )}
-      <main className={!isAuthPage ? "max-w-6xl mx-auto" : ""}>
+      <main className={!isAuthPage && location.pathname !== '/session' && !location.pathname.startsWith('/session/') ? "max-w-6xl mx-auto" : ""}>
         <Routes>
           <Route path="/" element={<Landing/>} />
           <Route path="/login" element={<Login/>} />
