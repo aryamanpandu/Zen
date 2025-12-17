@@ -5,7 +5,7 @@
 
 set -e
 
-echo "🚀 Starting Zen Pomodoro App..."
+echo "Starting Zen Pomodoro App..."
 
 # Colors for output
 GREEN='\033[0;32m'
@@ -14,14 +14,14 @@ NC='\033[0m' # No Color
 
 # Check if .env files exist
 if [ ! -f ".env" ]; then
-  echo "⚠️  .env file not found. Creating from .env.example..."
+  echo ".env file not found. Creating from .env.example..."
   cp .env.example .env
-  echo "✏️  Please edit .env with your actual RDS credentials and S3 URLs"
+  echo "Please edit .env with your actual RDS credentials and S3 URLs"
   exit 1
 fi
 
 # Start the backend server
-echo -e "${BLUE}📦 Starting Backend Server...${NC}"
+echo -e "${BLUE} Starting Backend Server...${NC}"
 cd server
 
 # Install dependencies if node_modules doesn't exist
@@ -33,7 +33,7 @@ fi
 # Start the server in the background
 npm run dev > /tmp/zen-server.log 2>&1 &
 SERVER_PID=$!
-echo -e "${GREEN}✓ Server started (PID: $SERVER_PID)${NC}"
+echo -e "${GREEN} Server started (PID: $SERVER_PID)${NC}"
 
 # Wait for server to be ready
 echo "Waiting for server to be ready..."
@@ -41,14 +41,14 @@ sleep 3
 
 # Check if server is running
 if kill -0 $SERVER_PID 2>/dev/null; then
-  echo -e "${GREEN}✓ Server is running on port 4000${NC}"
+  echo -e "${GREEN} Server is running on port 4000${NC}"
 else
-  echo "❌ Server failed to start. Check /tmp/zen-server.log"
+  echo "Server failed to start. Check /tmp/zen-server.log"
   exit 1
 fi
 
 # Start the frontend client
-echo -e "${BLUE}🎨 Starting Frontend Client...${NC}"
+echo -e "${BLUE} Starting Frontend Client...${NC}"
 cd ../client
 
 # Install dependencies if node_modules doesn't exist
@@ -74,7 +74,7 @@ echo -e "${GREEN}✓ Client started (PID: $CLIENT_PID)${NC}"
 echo "$SERVER_PID" > /tmp/zen-server.pid
 echo "$CLIENT_PID" > /tmp/zen-client.pid
 
-echo -e "${GREEN}✅ Zen App is running!${NC}"
+echo -e "${GREEN} Zen App is running!${NC}"
 echo -e "${BLUE}Frontend:${NC} http://localhost:3000"
 echo -e "${BLUE}Backend:${NC} http://localhost:4000"
 echo ""
